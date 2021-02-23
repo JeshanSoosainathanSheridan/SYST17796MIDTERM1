@@ -22,6 +22,7 @@ public class User
      */
     public User(String givenName, String givenPass)
     {
+       UsernameValidator.valdiateUsername(givenName);
         name = givenName;
         password=givenPass;
     }
